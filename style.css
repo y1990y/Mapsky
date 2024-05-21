@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+}
+
+div {
+    display: block;
+}
+
+.logo 
+{
+    height: 57.3px;
+    width: 90px;
+}
+
+.navbar {
+    height: 57.3px;
+    overflow: hidden; /* Faz com que o texto excedente do cabeçalho (caso em algum momento haja) seja escondido*/
+    background: linear-gradient(to bottom, #1E90FF 0%, #1463b1 100%); /* Gradiente do cabeçalho*/
+    position: sticky; /* Mantém o cabeçalho preso ao topo da tela (sujeito a mudanças)*/
+    position: -webkit-sticky; /* Mantém o cabeçalho preso ao topo da tela (sujeito a mudanças)*/
+}
