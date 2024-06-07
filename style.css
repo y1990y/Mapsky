@@ -32,8 +32,7 @@ ul {
     background: linear-gradient(to bottom, #48a3fd 0%, #1E90FF 100%);
   }
 
-.logo 
-{
+.logo {
     height: 20px;
     width: 90px;
 }
@@ -42,6 +41,45 @@ ul {
     height: 57.3px;
     overflow: hidden; /* Faz com que o texto excedente do cabeçalho (caso em algum momento haja) seja escondido*/
     background: linear-gradient(to bottom, #1E90FF 0%, #1463b1 100%); /* Gradiente do cabeçalho*/
-    position: sticky; /* Mantém o cabeçalho preso ao topo da tela (sujeito a mudanças)*/
-    position: -webkit-sticky; /* Mantém o cabeçalho preso ao topo da tela (sujeito a mudanças)*/
+}
+
+.parallax {
+    /*Imagem*/
+    background-image: url("Imagens/Template\ image.jpg");
+
+    /*Altura da imagem*/
+    min-height: 70%;
+
+    /*Efeito de parallax*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.button {
+  background: linear-gradient(to bottom, #1E90FF 0%, #1463b1 100%);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  color: white;
+  background-color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
