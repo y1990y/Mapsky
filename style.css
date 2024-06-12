@@ -1,4 +1,4 @@
-body{
+body {
     height: 100%;
     margin: 0;
     font: 400 15px/1.8 "Lato", sans-serif;
@@ -16,11 +16,11 @@ ul {
     background: linear-gradient(to bottom, #1E90FF 0%, #1463b1 100%); /* Gradiente do cabeçalho*/
   }
   
-  li {
+li {
     float: left;
   }
   
-  li a {
+li a {
     display: block;
     color: white;
     text-align: center;
@@ -29,7 +29,7 @@ ul {
     font-family: Arial, Helvetica, sans-serif;
   }
   
-  li a.logo {
+li a.logo {
     display: block;
     color: white;
     text-align: center;
@@ -38,10 +38,18 @@ ul {
     font-family: Arial, Helvetica, sans-serif;
   }
 
-  /* Troca a cor do link/botão para um gradiente quando o mouse passsa */
-  li a.hover:hover {
+/* Troca a cor do link/botão para um gradiente quando o mouse passsa */
+li a.hover:hover {
     background: linear-gradient(to bottom, #48a3fd 0%, #1E90FF 100%);
   }
+
+  
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
 
 .logo {
     height: 20px;
@@ -111,6 +119,7 @@ ul {
   color: #000;
 }
 
+/* Botão*/
 .button {
   background-color: #f24822;
   color: #fff;
@@ -160,6 +169,7 @@ ul {
   transform: translateY(4px);
 }
 
+/*Quebras entre as imagens em parallax*/
 .parallax-break-white {
   color: #777;
   background-color:white;
@@ -174,13 +184,6 @@ ul {
   text-align:center;
   padding:50px 80px;
   text-align: justify;
-}
-
-h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
 }
 
 /* Desliga o parallax para celulares e tablets */
