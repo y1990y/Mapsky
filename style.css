@@ -1,5 +1,7 @@
 body{
+    height: 100%;
     margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
 }
 
 div {
@@ -22,11 +24,20 @@ ul {
     display: block;
     color: white;
     text-align: center;
-    padding: 20px 16px;
+    padding: 16px 16px;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
   }
   
+  li a.logo {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
   /* Troca a cor do link/botão para um gradiente quando o mouse passsa */
   li a.hover:hover {
     background: linear-gradient(to bottom, #48a3fd 0%, #1E90FF 100%);
@@ -43,43 +54,138 @@ ul {
     background: linear-gradient(to bottom, #1E90FF 0%, #1463b1 100%); /* Gradiente do cabeçalho*/
 }
 
-.parallax {
-    /*Imagem*/
-    background-image: url("Imagens/Template\ image.jpg");
 
-    /*Altura da imagem*/
-    min-height: 70%;
+/*Especificações para as imagens em parallax*/
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    /*Efeito de parallax*/
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+
+/*Imagem 1*/
+.bgimg-1 {
+  background-image: url("Imagens/Template\ image.jpg");
+  min-height: 700px;
+}
+
+/*Imagem 2*/
+.bgimg-2 {
+  background-image: url("Imagens/Template\ image\ 2.jpg");
+  min-height: 600px;
+}
+
+/*Imagem 3*/
+.bgimg-3 {
+  background-image: url("Imagens/Template\ image\ 3.jpg");
+  min-height: 600px;
+}
+
+/*Texto inicial*/
+.intro {
+  position: absolute;
+  left: 0;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  font-size:30px;
+  color: #ffffff;
+}
+
+/* Textos flutuantes sobrepondo as imagens*/
+.text {
+  background-color:transparent;
+  font-size:25px;
+  color: #f7f7f7;
+}
+
+.subtitle {
+  position: absolute;
+  left: 0;
+  top: 70%;
+  width: 100%;
+  text-align: center;
+  color: #000;
 }
 
 .button {
-  background: linear-gradient(to bottom, #1E90FF 0%, #1463b1 100%);
+  background-color: #f24822;
+  color: #fff;
+  overflow: hidden;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 5px;
   border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  color: white;
-  background-color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  cursor: pointer;
 }
 
 .button:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background: linear-gradient(to bottom, #e65c3d 0%, #fc7b5e 100%);
+  text-align: center;
+  display: inline-block;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 5px;
 }
 
-.center {
-  margin: 0;
+.button span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
   position: absolute;
-  top: 65%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button:active {
+  transform: translateY(4px);
+}
+
+.parallax-break-white {
+  color: #777;
+  background-color:white;
+  text-align:center;
+  padding:50px 80px;
+  text-align: justify;
+}
+
+.parallax-break-gray {
+  color:#ddd;
+  background-color:#282E34;
+  text-align:center;
+  padding:50px 80px;
+  text-align: justify;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Desliga o parallax para celulares e tablets */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
 }
