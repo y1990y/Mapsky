@@ -13,7 +13,6 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: linear-gradient(to bottom, #1E90FF 0%, #1463b1 100%); /* Gradiente do cabeçalho*/
   }
   
 li {
@@ -59,7 +58,7 @@ h3 {
 .navbar {
     height: 57.3px;
     overflow: hidden; /* Faz com que o texto excedente do cabeçalho (caso em algum momento haja) seja escondido*/
-    background: linear-gradient(to bottom, #1E90FF 0%, #1463b1 100%); /* Gradiente do cabeçalho*/
+    background: linear-gradient(to bottom, #1E90FF 0%, #1463b1 100%); /* Gradiente do cabeçalho */
 }
 
 
@@ -121,7 +120,7 @@ h3 {
 
 /* Botão*/
 .button {
-  background-color: #f24822;
+  background: linear-gradient(to bottom, #e65c3d 0%, #fc7253 100%);
   color: #fff;
   overflow: hidden;
   padding: 18px;
@@ -133,7 +132,7 @@ h3 {
 }
 
 .button:hover {
-  background: linear-gradient(to bottom, #e65c3d 0%, #fc7b5e 100%);
+  background: linear-gradient(to bottom, #eb6d51 0%, #f88f77 100%);
   text-align: center;
   display: inline-block;
   padding: 18px;
@@ -172,7 +171,7 @@ h3 {
 /*Quebras entre as imagens em parallax*/
 .parallax-break-white {
   color: #777;
-  background-color:white;
+  background-color:#ffffff;
   text-align:center;
   padding:50px 80px;
   text-align: justify;
