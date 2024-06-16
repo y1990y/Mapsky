@@ -1,3 +1,4 @@
+/*
 body {
     height: 100%;
     margin: 0;
@@ -37,7 +38,6 @@ li a.logo {
     font-family: Arial, Helvetica, sans-serif;
   }
 
-/* Troca a cor do link/botão para um gradiente quando o mouse passsa */
 li a.hover:hover {
     background: linear-gradient(to bottom, #48a3fd 0%, #1E90FF 100%);
   }
@@ -57,38 +57,45 @@ h3 {
 
 .navbar {
     height: 57.3px;
-    overflow: hidden; /* Faz com que o texto excedente do cabeçalho (caso em algum momento haja) seja escondido*/
-    background: linear-gradient(to bottom, #1E90FF 0%, #1463b1 100%); /* Gradiente do cabeçalho */
+    overflow: hidden; 
+    background: linear-gradient(to bottom, #1E90FF 0%, #1463b1 100%);
 }
 
 
-/*Especificações para as imagens em parallax*/
+/*Especificações para as imagens em parallax */
 .bgimg-1, .bgimg-2, .bgimg-3 {
   position: relative;
   opacity: 1;
-  background-attachment: fixed;
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
+} 
+
+/*Logo*/
+.logo-1 {
+  background-image: url("Imagens/Mapsky_logo.png");
+  height: 60px;
+  width: 223px;
 }
 
 /*Imagem 1*/
 .bgimg-1 {
   background-image: url("Imagens/Template\ image.jpg");
-  min-height: 700px;
+  min-height: 500px;
 }
 
 /*Imagem 2*/
 .bgimg-2 {
   background-image: url("Imagens/Template\ image\ 2.jpg");
-  min-height: 600px;
+  min-height: 500px;
 }
 
 /*Imagem 3*/
 .bgimg-3 {
   background-image: url("Imagens/Template\ image\ 3.jpg");
-  min-height: 600px;
+  min-height: 500px;
 }
 
 /*Texto inicial*/
