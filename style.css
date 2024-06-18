@@ -82,38 +82,59 @@ h3 {
 
 /*Imagem 1*/
 .bgimg-1 {
-  background-image: url("Imagens/Template_image.jpg");
-  min-height: 500px;
+  background-image: url("Imagens/Exibição/Agricultura.png");
+  min-height: 600px;
 }
 
 /*Imagem 2*/
 .bgimg-2 {
-  background-image: url("Imagens/Template_image_2.jpg");
-  min-height: 500px;
+  background-image: url("Imagens/Exibição/Urbano.png");
+  min-height: 600px;
 }
 
 /*Imagem 3*/
 .bgimg-3 {
-  background-image: url("Imagens/Template_image_3.jpg");
-  min-height: 500px;
+  background-image: url("Imagens/Exibição/Mineração.png");
+  min-height: 600px;
 }
 
 .roundimg-1 {
-  background-image: url("Imagens/Round_template_image_1.jpg");
+  background-image: url("Imagens/Exibição/Campo.png");
   height: 140px;
   width: 140px;
   border-radius: 360px;
 }
 
 .roundimg-2 {
-  background-image: url("Imagens/Round_template_image_2.jpg");
+  background-image: url("Imagens/Exibição/Obras.png");
   height: 140px;
   width: 140px;
   border-radius: 360px;
 }
 
 .roundimg-3 {
-  background-image: url("Imagens/Round_template_image_3.jpg");
+  background-image: url("Imagens/Exibição/Vigilância.png");
+  height: 140px;
+  width: 140px;
+  border-radius: 360px;
+}
+
+.roundimg-4 {
+  background-image: url("Imagens/Exibição/Treinamento_básico.png");
+  height: 140px;
+  width: 140px;
+  border-radius: 360px;
+}
+
+.roundimg-5 {
+  background-image: url("Imagens/Exibição/Treinamento_avançado.png");
+  height: 140px;
+  width: 140px;
+  border-radius: 360px;
+}
+
+.roundimg-6 {
+  background-image: url("Imagens/Exibição/manutenção_preventiva.png");
   height: 140px;
   width: 140px;
   border-radius: 360px;
