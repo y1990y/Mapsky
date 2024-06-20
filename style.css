@@ -101,6 +101,13 @@
   color: #000;
 }
 
+.mb-3{
+  display: flexbox;
+  align-content: center;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
 /*Quebras entre as imagens em parallax*/
 .parallax-break-white {
   color: #777;
@@ -116,4 +123,9 @@
   text-align:center;
   padding:50px 80px;
   text-align: justify;
+}
+.img-icon{
+  height: 18px;
+  width: 18px;
+  margin: 12px;
 }
