@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mapsky</title>
-    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist-filtered/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-icons-filtered/font/bootstrap-icons.min.css">
+    <script src="bootstrap-5.3.3-dist-filtered/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
   
-  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="font-size: 15;">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow" style="font-size: 15;">
     <div class="container-fluid">
       <a class="navbar-brand logo-1" href="#"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,22 +21,22 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Serviços</a>
+            <a class="nav-link active" aria-current="page" href="#servicos" type="button">Serviços</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Treinamento</a>
+            <a class="nav-link" href="#treinamento" type="button">Treinamento</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sobre nós</a>
+            <a class="nav-link" href="#sobre" type="button">Sobre nós</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Contato
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#" target="_blank">Contato 1</a></li>
-              <li><a class="dropdown-item" href="https://www.instagram.com/mapsky_/" target="_blank">Instagram</a></li>
-              <li><a class="dropdown-item" href="https://www.linkedin.com/company/mapsky/" target="_blank">LinkedIn</a></li>
+              <li><a class="dropdown-item" href="#" target="_blank"><i class="bi bi-whatsapp"></i> WhatsApp (Sem Link)</a></li>
+              <li><a class="dropdown-item" href="https://www.instagram.com/mapsky_/" target="_blank"><i class="bi bi-instagram"></i> Instagram</a></li>
+              <li><a class="dropdown-item" href="https://www.linkedin.com/company/mapsky/" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
             </ul>
           </li>
         </ul>
@@ -46,7 +47,7 @@
     <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" id="servicos"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
@@ -70,7 +71,9 @@
       </button>
     </div>
 
-    <div class="container marketing" style="padding-top: 100px;">
+    <div class="container marketing" style="padding-top: 30px;">
+
+      <hr class="featurette-divider">
 
       <h1 style="text-align: center;">Nossos Serviços:</h1>
 
@@ -87,14 +90,14 @@
           <p>Inspeções detalhadas para garantir segurança e conformidade.</p>
 
         </div>
-        <div class="col-lg-4 text-center">
+        <div class="col-lg-4 text-center" id="treinamento">
           <div class="roundimg-3" style="margin: auto;"></div>
           <h2 class="fw-normal" style="padding-top: 20px;">Segurança e Vigilância</h2>
           <p>Soluções de vigilância aérea para segurança pública e privada.</p>
 
         </div>
       </div>
-
+      
       <hr class="featurette-divider">
 
       <h1 style="text-align: center; padding-top: 40px;">Treinamento de Pilotos:</h1>
@@ -112,15 +115,15 @@
           <p>Aprimore suas habilidades com cenários avançados.</p>
 
         </div>
-        <div class="col-lg-4 text-center">
+        <div class="col-lg-4 text-center" id="sobre">
           <div class="roundimg-6" style="margin: auto;"></div>
           <h2 class="fw-normal" style="padding-top: 20px;">Curso de Manutenção de Drones</h2>
           <p>Aprenda a realizar manutenção preventiva e corretiva.</p>
 
         </div>
       </div>
-  
-      <hr class="featurette-divider">
+
+      <hr class="featurette-divider"">
   
       <div class="row featurette">
         <div class="col-md-7">
@@ -161,52 +164,9 @@
     </div>
 
     <footer class="parallax-break-white">
-      <p class="float-end"><a href="#">Voltar ao topo</a></p>
+      <p class="float-end"><a href="#">Voltar ao topo ↑</a></p>
       <p>© 2016–2024 MAPSKY. Todos os direitos reservados.</p>
     </footer>
-
     
-
-
-    <!--
-    <div class="bgimg-1">
-        <div class="intro"> 
-            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor nisl ut ipsum dapibus euismod. Maecenas quam tellus, malesuada sit amet varius ac, semper non urna.</span>
-        </div>
-        <div class="subtitle">
-        <button class="button"><span>Botão</span></button>
-        </div>
-      </div>
-      
-      <div class="parallax-break-white">
-        <h3 style="text-align:center;">Exemplo</h3>
-        <p>Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
-      </div>
-      
-      <div class="bgimg-2">
-        <div class="subtitle">
-            <span class="border text">Exemplo</span>
-        </div>
-      </div>
-      
-      <div style="position:relative;">
-        <div class="parallax-break-white">
-        <p>Vivamus metus leo, scelerisque eu maximus volutpat, laoreet ut quam. Sed pretium vestibulum viverra. Vivamus hendrerit volutpat magna, at placerat dui bibendum vitae. Vestibulum id pharetra quam. Sed a odio malesuada, luctus nibh ut, sodales urna. Donec faucibus mauris sagittis elementum vehicula. Curabitur eu lorem nec quam tincidunt faucibus in a ante. Praesent nec purus mi. Duis dapibus faucibus nisl at lacinia. Praesent iaculis ligula quis mauris rutrum viverra. Vivamus eu tincidunt turpis. In ullamcorper at ante sit amet porttitor.</p>
-        </div>
-      </div>
-      
-      <div class="bgimg-3">
-        <div class="subtitle">
-        <span class="border text">Exemplo</span>
-        </div>
-      </div>
-      
-      <div style="position:relative;">
-        <div class="parallax-break-gray">
-        <p>Curabitur et feugiat quam. Aenean vel magna tempor, dapibus justo pharetra, eleifend lectus. Aliquam volutpat scelerisque nisi ac bibendum. Aliquam accumsan, tellus et finibus semper, turpis purus dapibus neque, a ullamcorper lacus sem sit amet risus. Proin justo lorem, venenatis in eros nec, interdum semper leo. Phasellus rhoncus sodales scelerisque. Pellentesque condimentum sem a tortor mollis, eget pharetra libero venenatis. Aliquam suscipit, ligula eget luctus mollis, felis metus imperdiet justo, ac commodo eros urna suscipit quam. Pellentesque blandit congue felis sed fringilla.</p>
-        </div>
-      </div>
-
-      -->
 </body>
 </html>
