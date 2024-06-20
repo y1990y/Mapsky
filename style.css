@@ -1,76 +1,10 @@
-/*
-body {
-    height: 100%;
-    margin: 0;
-    font: 400 15px/1.8 "Lato", sans-serif;
-}
-
-div {
-    display: block;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-li {
-    float: left;
-  }
-  
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px 16px;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-li a.logo {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 20px 16px;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-li a.hover:hover {
-    background: linear-gradient(to bottom, #48a3fd 0%, #1E90FF 100%);
-  }
-
-  
-h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
-}
-
-.logo {
-    height: 20px;
-    width: 90px;
-}
-
-.navbar {
-    height: 57.3px;
-    overflow: hidden; 
-    background: linear-gradient(to bottom, #1E90FF 0%, #1463b1 100%);
-}
-
-
 /*Especificações para as imagens em parallax */
 .bgimg-1, .bgimg-2, .bgimg-3 {
   position: relative;
   opacity: 1;
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 } 
 
 /*Logo*/
@@ -167,56 +101,6 @@ h3 {
   color: #000;
 }
 
-/* Botão*/
-.button {
-  background: linear-gradient(to bottom, #e65c3d 0%, #fc7253 100%);
-  color: #fff;
-  overflow: hidden;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 5px;
-  border: none;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  cursor: pointer;
-}
-
-.button:hover {
-  background: linear-gradient(to bottom, #eb6d51 0%, #f88f77 100%);
-  text-align: center;
-  display: inline-block;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 5px;
-}
-
-.button span {
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-.button:active {
-  transform: translateY(4px);
-}
-
 /*Quebras entre as imagens em parallax*/
 .parallax-break-white {
   color: #777;
@@ -232,11 +116,4 @@ h3 {
   text-align:center;
   padding:50px 80px;
   text-align: justify;
-}
-
-/* Desliga o parallax para celulares e tablets */
-@media only screen and (max-device-width: 1024px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-  }
 }
