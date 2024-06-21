@@ -16,20 +16,41 @@
 
 /*Imagem 1*/
 .bgimg-1 {
-  background-image: url("Imagens/Exibição/Agricultura.png");
-  min-height: 600px;
+  background-image: url("Imagens/Exibição/img03.png");
+  height: 850px;
+}
+
+/*Imagem 01 Sobre nós*/
+.bgimg-1-1{
+  background-image: url("Imagens/Exibição/img01.png");
+  height: 600px;
+  width: 600px;
+}
+
+/*Imagem 01 Sobre nós*/
+.bgimg-2-1{
+  background-image: url("Imagens/Exibição/img04.png");
+  height: 600px;
+  width: 500px;
+}
+
+/*Imagem 01 Sobre nós*/
+.bgimg-3-1{
+  background-image: url("Imagens/Exibição/img02.png");
+  height: 600px;
+  width: 600px;
 }
 
 /*Imagem 2*/
 .bgimg-2 {
   background-image: url("Imagens/Exibição/Urbano.png");
-  min-height: 600px;
+  height: 850px;
 }
 
 /*Imagem 3*/
 .bgimg-3 {
   background-image: url("Imagens/Exibição/Mineração.png");
-  min-height: 600px;
+  height: 850px;
 }
 
 .roundimg-1 {
@@ -101,10 +122,17 @@
   color: #000;
 }
 
+.mb-3{
+  display: flexbox;
+  align-content: center;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
 /*Quebras entre as imagens em parallax*/
 .parallax-break-white {
   color: #777;
-  background-color:#ffffff;
+  background-color:lightblue;
   text-align:center;
   padding:50px 80px;
   text-align: justify;
@@ -116,4 +144,37 @@
   text-align:center;
   padding:50px 80px;
   text-align: justify;
+}
+.img-icon{
+  height: 24px;
+  width: 24px;
+  margin: 12px;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+.whatsapp-button:hover {
+    background-color: #1ebe5a;
+}
+.whatsapp-button img {
+    width: 32px;
+    height: 32px;
+}
+.whats.btn{
+  height: 80px;
+  width: 80px;
 }
