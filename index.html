@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mapsky</title>
-    <link rel="stylesheet" href="bootstrap-5.3.3-dist-filtered/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap-icons-filtered/font/bootstrap-icons.min.css">
-    <script src="bootstrap-5.3.3-dist-filtered/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -30,44 +30,50 @@
             <a class="nav-link" href="#sobre" type="button">Sobre nós</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link" href="#contato" type="button">Contato</a>
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Contato
             </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#contato"><i class="bi bi-envelope"></i> E-mail</a></li>
+              <li><a class="dropdown-item" href="https://www.linkedin.com/company/mapsky/" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
+              <li><a class="dropdown-item" href="https://www.instagram.com/mapsky_/" target="_blank"><i class="bi bi-instagram"></i> Instagram</a></li>
+              <li><a class="dropdown-item" href="https://wa.me/5517981624792" target="_blank"><i class="bi bi-whatsapp"></i> WhatsApp</a></li>
+            </ul>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-
-    <div id="carouselExampleIndicators" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" id="servicos"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div class="wrapper">
+      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="7000" style="background-color: #a0a0a0;">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" id="servicos"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="bgimg-1 d-block w-100"></div>
+          </div>
+          <div class="carousel-item">
+            <div class="bgimg-2 d-block w-100"></div>
+          </div>
+          <div class="carousel-item">
+            <div class="bgimg-3 d-block w-100"></div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="bgimg-1"></div>
-        </div>
-        <div class="carousel-item">
-          <div class="bgimg-2"></div>
-        </div>
-        <div class="carousel-item">
-          <div class="bgimg-3"></div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Próximo</span>
-      </button>
     </div>
 
     <div class="container marketing" style="padding-top: 30px;">
-
-      <hr class="featurette-divider">
 
       <h1 style="text-align: center;">Nossos Serviços:</h1>
 
@@ -88,11 +94,10 @@
           <div class="roundimg-3" style="margin: auto;"></div>
           <h2 class="fw-normal" style="padding-top: 20px;">Segurança e Vigilância</h2>
           <p>Soluções de vigilância aérea para segurança pública e privada.</p>
-
         </div>
       </div>
       
-      <hr class="featurette-divider" id="treinamento"><br><br>
+      <hr class="featurette-divider" style="padding-bottom: 48px;">
 
       <h1 style="text-align: center; padding-top: 40px;">Treinamento de Pilotos:</h1>
 
@@ -117,9 +122,8 @@
         </div>
       </div>
 
-      <hr class="featurette-divider"><br><br>
+      <hr class="featurette-divider" style="padding-bottom: 48px;">
       
-  
       <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading fw-normal lh-1">Sobre Nós <span class="text-body-secondary"></span></h2>
@@ -130,7 +134,7 @@
         </div>
       </div>
   
-      <hr class="featurette-divider"><br>
+      <hr class="featurette-divider" style="padding-bottom: 24px;">
   
       <div class="row featurette">
         <div class="col-md-7 order-md-2">
@@ -142,7 +146,7 @@
         </div>
       </div>
   
-      <hr class="featurette-divider"><br>
+      <hr class="featurette-divider" style="padding-bottom: 24px;">
   
       <div class="row featurette">
         <div class="col-md-7">
@@ -154,39 +158,38 @@
         </div>
       </div>
   
-      <hr class="featurette-divider">
+      <hr class="featurette-divider" style="padding-bottom: 48px;">
   
-    </div><br><br>
+    </div>
 
     <div class="mb-3" id="contato">
-      <h2 class="featurette-heading fw-normal lh-1">Entre em contato conosco <span class="text-body-secondary"></span></h2><br>
-      <label for="exampleFormControlInput1" class="form-label">Email</label>
+      <h2 class="featurette-heading fw-normal lh-1">Entre em contato conosco <span class="text-body-secondary"></span></h2>
+      <label for="exampleFormControlInput1" class="form-label" style="padding-top: 24px;">Email</label>
       <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
     </div>
     <div class="mb-3">
       <label for="exampleFormControlTextarea1" class="form-label">Descrição</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea><br>
-      <button type="button" class="btn btn-primary">Enviar</button>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="margin-bottom: 24px;"></textarea>
+      <button type="button" class="btn btn-primary button-color">Enviar</button>
     </div>
 
     <footer class="parallax-break-white">
-      <p class="float-end"><a href="#">Voltar ao topo ↑</a></p>
+      <p class="float-end" style="padding-top: 30px;"><a href="#" style="text-decoration: none">Voltar ao topo ↑</a></p>
       <div class="social-icons">
-        <a href="https://www.linkedin.com/company/mapsky/" target="_blank">
-            <img class="img-icon" src="/Mapsky/Imagens/Exibição/linkedin.png" alt="linkedin">
+        <a href="https://www.linkedin.com/company/mapsky/" target="_blank" style="text-decoration: none">
+            <img class="img-icon" src="Imagens/Exibição/linkedin.png" alt="linkedin">
         </a>
-        <a href="https://www.instagram.com/mapsky_/" target="_blank">
-            <img class="img-icon" src="/Mapsky/Imagens/Exibição/instagram.png" alt="Instagram">
+        <a href="https://www.instagram.com/mapsky_/" target="_blank" style="text-decoration: none">
+            <img class="img-icon" src="Imagens/Exibição/instagram.png" alt="Instagram">
         </a>
-        <a href="https://wa.me/5517981624792" target="_blank">
-            <img class="img-icon" src="/Mapsky/Imagens/Exibição/whatsapp.png" alt="WhatsApp">
+        <a href="https://wa.me/5517981624792" target="_blank" style="text-decoration: none">
+            <img class="img-icon" src="Imagens/Exibição/whatsapp.png" alt="WhatsApp">
         </a>
     </div>
       <p>© 2016–2024 MAPSKY. Todos os direitos reservados.</p>
     </footer>
 
     <a href="https://wa.me/5517981624792" target="_blank" class="whatsapp-button">
-      <img class="whats.btn" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-    
+      <img class="whats.btn" src="Imagens/WhatsApp.svg" alt="WhatsApp">
 </body>
 </html>
