@@ -1,10 +1,17 @@
-/*Especificações para as imagens em parallax */
+html, body {margin: 0px; padding: 0px; width: 100%; height: 100%;}
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+}
+
+/*Especificações para as imagens no carousel */
 .bgimg-1, .bgimg-2, .bgimg-3 {
   position: relative;
   opacity: 1;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 500px;
 } 
 
 /*Logo*/
@@ -17,40 +24,38 @@
 /*Imagem 1*/
 .bgimg-1 {
   background-image: url("Imagens/Exibição/img03.png");
-  height: 850px;
 }
 
+/*Imagem 2*/
+.bgimg-2 {
+  background-image: url("Imagens/Exibição/Agricultura.png");
+}
+
+/*Imagem 3*/
+.bgimg-3 {
+  background-image: url("Imagens/Exibição/Mineração.png");
+}
 /*Imagem 01 Sobre nós*/
 .bgimg-1-1{
   background-image: url("Imagens/Exibição/img01.png");
   height: 600px;
-  width: 600px;
+  width: 500px;
+  float: right;
 }
 
-/*Imagem 01 Sobre nós*/
+/*Imagem 02 Nossa Missão*/
 .bgimg-2-1{
   background-image: url("Imagens/Exibição/img04.png");
   height: 600px;
   width: 500px;
 }
 
-/*Imagem 01 Sobre nós*/
+/*Imagem 03 Nossa História*/
 .bgimg-3-1{
   background-image: url("Imagens/Exibição/img02.png");
   height: 600px;
-  width: 600px;
-}
-
-/*Imagem 2*/
-.bgimg-2 {
-  background-image: url("Imagens/Exibição/Urbano.png");
-  height: 850px;
-}
-
-/*Imagem 3*/
-.bgimg-3 {
-  background-image: url("Imagens/Exibição/Mineração.png");
-  height: 850px;
+  width: 500px;
+  float: right;
 }
 
 .roundimg-1 {
@@ -132,7 +137,7 @@
 /*Quebras entre as imagens em parallax*/
 .parallax-break-white {
   color: #777;
-  background-color:lightblue;
+  background-color: #f7f7f7;
   text-align:center;
   padding:50px 80px;
   text-align: justify;
@@ -177,4 +182,9 @@
 .whats.btn{
   height: 80px;
   width: 80px;
+}
+
+.button-color {
+  background-color: #1191d6;
+  border: none;
 }
